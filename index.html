@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="styles/style.css" />
+
+        <!-- Leaflet.js -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""
+        />
+        <title>BikePredict</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>BikePredict</h1>
+        </div>
+
+        <div class="content_wrapper">
+            <div id="main-content">
+                <div class="left_content">
+                    <div class="loc">
+                        <h3 class="loc_name">
+                            Predilniška cesta 13
+                            <i
+                                class="fa-solid fa-chevron-down fa-rotate-180"
+                            ></i>
+                        </h3>
+                        <div class="loc_content active">
+                            <div>
+                                <canvas id="myChart1"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loc">
+                        <h3 class="loc_name">
+                            Deteljica 2 <i class="fa-solid fa-chevron-down"></i>
+                        </h3>
+                        <div class="loc_content" style="display: none">
+                            <div>
+                                <canvas id="myChart2"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loc">
+                        <h3 class="loc_name">
+                            Trg svobode 18
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </h3>
+                        <div class="loc_content" style="display: none">
+                            <div>
+                                <canvas id="myChart3"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right_content">
+                    <div id="map">
+                        <!-- <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44039.04431424538!2d14.296516731679267!3d46.380492214781334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477aa355a11ba965%3A0x556ff932aae39ca7!2zT2LEjWluYSBUcsW-acSN!5e0!3m2!1ssl!2ssi!4v1699968027750!5m2!1ssl!2ssi"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe> -->
+                    </div>
+                    <div id="media_player">
+                        <span>Podatki skozi zgodovino:</span>
+                        <div class="slider_container">
+                            <input
+                                type="range"
+                                min="0"
+                                max="100"
+                                value="0"
+                                class="slider"
+                                id="myRange"
+                            />
+                        </div>
+
+                        <div class="button-wrapper">
+                            <button id="playBtn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <button id="pauseBtn">
+                                <i class="fa-solid fa-pause"></i>
+                            </button>
+                        </div>
+
+                        <div>
+                            <span class="date" id="timestamp_data"
+                                >24. marec 2023</span
+                            >
+                            <span class="weather">16 C</span>
+                        </div>
+                        <div id="testDisplayData"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- jQuery -->
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+            ></script>
+            <!-- FontAwesome -->
+            <script
+                src="https://kit.fontawesome.com/b4dc56fa9b.js"
+                crossorigin="anonymous"
+            ></script>
+            <!-- Chart.js -->
+            <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+            <!-- Leaflet.js -->
+            <script
+                src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                crossorigin=""
+            ></script>
+
+            <!-- Custom scripts -->
+            <script src="js/script.js"></script>
+        </div>
+    </body>
+</html>
