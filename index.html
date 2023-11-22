@@ -74,6 +74,7 @@
                                 <canvas id="station_history"></canvas>
                             </div>
                             <div class="loc_charts_prediction">
+                                <h4>Napoved razpoložljivosti koles:</h4>
                                 <canvas id="station_prediction"></canvas>
                             </div>
                         </div>
@@ -84,7 +85,9 @@
                     <div id="map"></div>
 
                     <div id="media_player">
-                        <span>Podatki skozi zgodovino:</span>
+                        <span class="media_player_title">
+                            Podatki postaj skozi zgodovino:
+                        </span>
                         <div class="slider_container">
                             <input
                                 type="range"
@@ -105,11 +108,23 @@
                             </button>
                         </div>
 
-                        <div>
-                            <span class="date" id="timestamp_data"
-                                >24. marec 2023</span
-                            >
-                            <span class="weather">16 C</span>
+                        <div
+                            style="
+                                display: flex;
+                                justify-content: space-evenly;
+                                padding-top: 25px;
+                            "
+                        >
+                            <div class="dateTimeWrapper">
+                                <span class="date" id="date_data"></span>
+                                <span class="time" id="time_data"></span>
+                            </div>
+                            <div class="weatherWrapper">
+                                <div class="weatherIconWrapper">
+                                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                                </div>
+                                <span class="weather_info">16°C</span>
+                            </div>
                         </div>
 
                         <span class="hide_show_player active" id="hideBtn">

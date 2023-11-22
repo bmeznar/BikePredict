@@ -17,11 +17,12 @@ let locations_circles = [];
 //     $(this).find(".fa-chevron-down").addClass("fa-rotate-180");
 // });
 
+//prikaz in skritje playerja
 $("#hideBtn").on("click", function () {
     if ($(this).hasClass("active")) {
         $(this).removeClass("active");
         $(this).find(".fa-chevron-down").addClass("fa-rotate-180");
-        $("#media_player").css("bottom", "-165px");
+        $("#media_player").css("bottom", "-220px");
     } else {
         $(this).addClass("active");
         $(this).find(".fa-chevron-down").removeClass("fa-rotate-180");
@@ -29,39 +30,7 @@ $("#hideBtn").on("click", function () {
     }
 });
 
-jQuery.fn.shake = function () {
-    this.each(function (i) {
-        for (var x = 1; x <= 3; x++) {
-            $(this)
-                .animate(
-                    {
-                        right: "-=5",
-                    },
-                    10
-                )
-                .animate(
-                    {
-                        left: 0,
-                    },
-                    50
-                )
-                .animate(
-                    {
-                        right: "    +=5",
-                    },
-                    10
-                )
-                .animate(
-                    {
-                        left: 0,
-                    },
-                    50
-                );
-        }
-    });
-    return this;
-};
-
+// shaking gumba za prikaz playerja
 setInterval(function () {
     if (!$("#hideBtn").hasClass("active")) {
         $("#hideBtn").effect("shake", { times: 4, distance: 3 }, 1000);
@@ -98,7 +67,8 @@ fetch("getContent.php")
         const timestamps = data["timestamps"];
 
         const dataSlider = document.getElementById("myRange");
-        const timestampDisplay = document.getElementById("timestamp_data");
+        const timeDisplay = document.getElementById("time_data");
+        const dateDisplay = document.getElementById("date_data");
         const jsonData = data["timestamps"];
         const playBtn = document.getElementById("playBtn");
         const pauseBtn = document.getElementById("pauseBtn");
@@ -114,7 +84,6 @@ fetch("getContent.php")
 
         //inicializiramo markerje lokacij in narisane kroge
         const locations = jsonData[0].stations;
-
         locations.forEach((element) => {
             if (!activeStation) {
                 activeStation = element.id;
@@ -187,20 +156,26 @@ fetch("getContent.php")
             const selectedData = jsonData[index];
 
             const dateObject = new Date(selectedData.timestamp);
-            const formattedDate = dateObject.toLocaleDateString();
-            const formattedTime = dateObject.toLocaleTimeString();
-            console.log("Date:", formattedDate);
-            console.log("Time:", formattedTime);
+            const formattedDate = dateObject.toLocaleDateString("sl-SI", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+            });
+            const formattedTime = dateObject.toLocaleTimeString(undefined, {
+                hour: "2-digit",
+                minute: "2-digit",
+            });
+            // console.log("Date:", formattedDate);
+            // console.log("Time:", formattedTime);
 
-            timestampDisplay.textContent = `${formattedDate}     ${formattedTime}`;
+            timeDisplay.textContent = `${formattedTime}`;
+            dateDisplay.textContent = `${formattedDate}`;
             for (let i = 0; i < selectedData.stations.length; i++) {
                 locations_circles[i].setRadius(
                     selectedData.stations[i].numberOfBikes * 150
                 );
 
                 if (selectedData.stations[i].id == activeStation) {
-                    // console.log("prikazujem postajo:" + activeStation);
-                    // console.log(selectedData.stations[i]);
                     updateGraphs(selectedData.stations[i]);
                     stationName.innerHTML = selectedData.stations[i].name;
                 }
@@ -208,18 +183,15 @@ fetch("getContent.php")
         }
 
         function changeActiveStation(context, stationID) {
-            // console.log(stationID);
             activeStation = stationID;
             const selectedData = jsonData[currentIndex];
             let index = selectedData.stations.findIndex(
                 (station) => station.id === activeStation
             );
-            // console.log(selectedData.stations[index]);
             updateGraphs(selectedData.stations[index]);
             stationName.innerHTML = selectedData.stations[index].name;
             $(".leaflet-marker-icon.activeMarker").removeClass("activeMarker");
             context._icon.classList.add("activeMarker");
-            // console.log(context._icon.className);
         }
     })
     .catch((error) => {
@@ -230,6 +202,7 @@ fetch("getContent.php")
 const station_history = document.getElementById("station_history");
 const station_prediction = document.getElementById("station_prediction");
 
+// izris grafa za zgodovino postaj
 let bikeHistoryChart = new Chart(station_history, {
     type: "doughnut",
     data: {
@@ -252,6 +225,7 @@ let bikeHistoryChart = new Chart(station_history, {
     },
 });
 
+//izris grafa za napoved razpoložljivosti
 let predictionChart = new Chart(station_prediction, {
     type: "line",
     data: {
