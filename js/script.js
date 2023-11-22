@@ -114,6 +114,7 @@ fetch("getContent.php")
 
         //inicializiramo markerje lokacij in narisane kroge
         const locations = jsonData[0].stations;
+
         locations.forEach((element) => {
             if (!activeStation) {
                 activeStation = element.id;
@@ -125,8 +126,12 @@ fetch("getContent.php")
             )
                 .addTo(map)
                 .on("click", function (e) {
-                    changeActiveStation(element.id);
+                    changeActiveStation(this, element.id);
                 });
+
+            if (element.id == activeStation) {
+                L.DomUtil.addClass(marker._icon, "activeMarker");
+            }
 
             let circle = L.circle([element.latitude, element.longitude], {
                 color: "transparent",
@@ -202,16 +207,19 @@ fetch("getContent.php")
             }
         }
 
-        function changeActiveStation(stationID) {
-            console.log(stationID);
+        function changeActiveStation(context, stationID) {
+            // console.log(stationID);
             activeStation = stationID;
             const selectedData = jsonData[currentIndex];
             let index = selectedData.stations.findIndex(
                 (station) => station.id === activeStation
             );
-            console.log(selectedData.stations[index]);
+            // console.log(selectedData.stations[index]);
             updateGraphs(selectedData.stations[index]);
             stationName.innerHTML = selectedData.stations[index].name;
+            $(".leaflet-marker-icon.activeMarker").removeClass("activeMarker");
+            context._icon.classList.add("activeMarker");
+            // console.log(context._icon.className);
         }
     })
     .catch((error) => {
@@ -221,60 +229,6 @@ fetch("getContent.php")
 // G R A F I
 const station_history = document.getElementById("station_history");
 const station_prediction = document.getElementById("station_prediction");
-
-// new Chart(ctx2, {
-//     type: "doughnut",
-//     data: {
-//         labels: [
-//             "Prosta kolesa",
-//             "Prosta el. kolesa",
-//             "Prazne ključavnice",
-//             "Pokvarjena kolesa",
-//         ],
-//         datasets: [
-//             {
-//                 label: "# of Votes",
-//                 data: [12, 19, 3, 5],
-//                 borderWidth: 1,
-//             },
-//         ],
-//     },
-//     options: {
-//         plugins: {
-//             legend: {
-//                 display: true,
-//                 position: "right",
-//             },
-//         },
-//     },
-// });
-
-// new Chart(ctx3, {
-//     type: "doughnut",
-//     data: {
-//         labels: [
-//             "Prosta kolesa",
-//             "Prosta el. kolesa",
-//             "Prazne ključavnice",
-//             "Pokvarjena kolesa",
-//         ],
-//         datasets: [
-//             {
-//                 label: "# of Votes",
-//                 data: [12, 19, 3, 5],
-//                 borderWidth: 1,
-//             },
-//         ],
-//     },
-//     options: {
-//         plugins: {
-//             legend: {
-//                 display: true,
-//                 position: "right",
-//             },
-//         },
-//     },
-// });
 
 let bikeHistoryChart = new Chart(station_history, {
     type: "doughnut",
@@ -306,6 +260,11 @@ let predictionChart = new Chart(station_prediction, {
             {
                 label: "Predvidena razpoložljivost koles",
                 data: [5, 8, 4, 9],
+                tension: 0.4,
+            },
+            {
+                label: "Predvidena razpoložljivost el. koles",
+                data: [3, 2, 1, 5],
                 tension: 0.4,
             },
         ],
@@ -351,7 +310,6 @@ function updateGraphs(station) {
     bikeHistoryChart.update();
 }
 
-// TODO: highlight izbranega markerja
 // TODO: hover na markerju izpiše št. koles
 // TODO: spreminjanje krogov na zemljevidu z zoomanjem
 // TODO: spreminjanje prikazane napovedi ob spremembi lokacije

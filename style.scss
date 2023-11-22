@@ -16,8 +16,6 @@ $neutral: #EFEFEF;
   background: transparent;
 }
 
-
-
 body {
   //height: 100%;
   height: 100vh;
@@ -29,6 +27,10 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.activeMarker {
+  filter: hue-rotate(120deg); 
 }
 
 .header {
@@ -105,6 +107,8 @@ body {
       iframe {
         //border-radius: 10px;
         border: 2px solid $carbon !important;
+
+        
       }
     }
 

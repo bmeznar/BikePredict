@@ -19,6 +19,10 @@ body {
   overflow: hidden;
 }
 
+.activeMarker {
+  filter: hue-rotate(120deg);
+}
+
 .header {
   background-color: #1F1F1F;
   padding: 20px;
