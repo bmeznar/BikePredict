@@ -27,7 +27,7 @@
         <div class="content_wrapper">
             <div id="main-content">
                 <div class="left_content">
-                    <div class="loc">
+                    <!-- <div class="loc">
                         <h3 class="loc_name">
                             Predilniška cesta 13
                             <i
@@ -60,21 +60,29 @@
                                 <canvas id="myChart3"></canvas>
                             </div>
                         </div>
+                    </div> -->
+
+                    <div class="loc">
+                        <div class="loc_header">
+                            <h2 class="loc_header_title">
+                                <span>Postaja: </span>
+                                <span id="loc_name"></span>
+                            </h2>
+                        </div>
+                        <div class="loc_charts">
+                            <div class="loc_charts_history">
+                                <canvas id="station_history"></canvas>
+                            </div>
+                            <div class="loc_charts_prediction">
+                                <canvas id="station_prediction"></canvas>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="right_content">
-                    <div id="map">
-                        <!-- <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44039.04431424538!2d14.296516731679267!3d46.380492214781334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477aa355a11ba965%3A0x556ff932aae39ca7!2zT2LEjWluYSBUcsW-acSN!5e0!3m2!1ssl!2ssi!4v1699968027750!5m2!1ssl!2ssi"
-                            width="600"
-                            height="450"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe> -->
-                    </div>
+                    <div id="map"></div>
+
                     <div id="media_player">
                         <span>Podatki skozi zgodovino:</span>
                         <div class="slider_container">
@@ -103,17 +111,24 @@
                             >
                             <span class="weather">16 C</span>
                         </div>
-                        <div id="testDisplayData"></div>
+
+                        <span class="hide_show_player active" id="hideBtn">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
                     </div>
                 </div>
             </div>
 
             <!-- jQuery -->
             <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                src="https://code.jquery.com/jquery-3.7.1.js"
+                integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
                 crossorigin="anonymous"
-                referrerpolicy="no-referrer"
+            ></script>
+            <script
+                src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+                integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+                crossorigin="anonymous"
             ></script>
             <!-- FontAwesome -->
             <script

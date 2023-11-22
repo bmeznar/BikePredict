@@ -18,24 +18,7 @@ try {
     // $data['numberOfTimestamps'] = $numberOfTimestamps;
     
 
-    // T E S T    J S O N
-    // $jsonData = file_get_contents('test.json');
-    // $data = json_decode($jsonData, true);
-    // echo $data;
-
-    // if ($data === null && json_last_error() !== JSON_ERROR_NONE) {
-    //     throw new Exception('Napaka pri pretvrbi JSON');
-    // }
-    
-    // $numberOfTimestamps = count($data['timestamps']);
-    // $data['numberOfTimestamps'] = $numberOfTimestamps;
-
-    // header('Content-Type: application/json');
-    // echo json_encode($data);
-
-
-
-
+    // T E S T    D A T A    J S O N
     $jsonData = file_get_contents('test_data.json');
     $data = json_decode($jsonData, true);
 
