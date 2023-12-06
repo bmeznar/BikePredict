@@ -1,22 +1,5 @@
 let locations_circles = [];
 
-// $(".loc").on("click", function () {
-//     if ($(this).find(".loc_content").hasClass("active")) {
-//         return;
-//     }
-//     //zapiranje odprtega
-//     $(".loc_content.active").slideUp("fast", function () {});
-//     $(".loc_content.active").removeClass("active");
-//     $(".fa-chevron-down.fa-rotate-180").removeClass("fa-rotate-180");
-
-//     //odpiranje kliknjenega
-//     $(this)
-//         .find(".loc_content")
-//         .slideDown("fast", function () {});
-//     $(this).find(".loc_content").addClass("active");
-//     $(this).find(".fa-chevron-down").addClass("fa-rotate-180");
-// });
-
 //prikaz in skritje playerja
 $("#hideBtn").on("click", function () {
     if ($(this).hasClass("active")) {
@@ -41,13 +24,6 @@ setInterval(function () {
 var map = L.map("map").setView([46.303, 14.295], 11);
 var Stadia_AlidadeSmoothDark = L.tileLayer(
     "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}",
-    // {
-    //     minZoom: 0,
-    //     maxZoom: 20,
-    //     attribution:
-    //         '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    //     ext: "png",
-    // }
     {
         minZoom: 0,
         maxZoom: 20,
@@ -78,6 +54,7 @@ fetch("getContent.php")
         let currentIndex = 0;
         let intervalId;
         let activeStation;
+        let currentZoom = map.getZoom();
 
         // nastavimo stevilo korakov sliderja
         dataSlider.max = data["numberOfTimestamps"];
@@ -106,7 +83,7 @@ fetch("getContent.php")
                 color: "transparent",
                 fillColor: "#f03",
                 fillOpacity: 0.5,
-                radius: element.numberOfBikes * 150,
+                radius: element.numberOfBikes * currentZoom,
             }).addTo(heatmap);
             locations_circles.push(circle);
         });
@@ -172,7 +149,7 @@ fetch("getContent.php")
             dateDisplay.textContent = `${formattedDate}`;
             for (let i = 0; i < selectedData.stations.length; i++) {
                 locations_circles[i].setRadius(
-                    selectedData.stations[i].numberOfBikes * 150
+                    selectedData.stations[i].numberOfBikes * currentZoom * 2
                 );
 
                 if (selectedData.stations[i].id == activeStation) {
@@ -193,6 +170,12 @@ fetch("getContent.php")
             $(".leaflet-marker-icon.activeMarker").removeClass("activeMarker");
             context._icon.classList.add("activeMarker");
         }
+
+        // funkcija spreminjanja ob zoomu
+        map.on("zoomend", function () {
+            currentZoom = map.getZoom();
+            updateDataDisplay(currentIndex);
+        });
     })
     .catch((error) => {
         console.error("Error fetching JSON:", error);
@@ -250,6 +233,10 @@ let predictionChart = new Chart(station_prediction, {
                 display: false,
                 text: "Napoved razpoložljivosti koles",
             },
+            legend: {
+                display: true,
+                position: "bottom",
+            },
         },
         interaction: {
             intersect: false,
@@ -285,6 +272,8 @@ function updateGraphs(station) {
 }
 
 // TODO: hover na markerju izpiše št. koles
-// TODO: spreminjanje krogov na zemljevidu z zoomanjem
 // TODO: spreminjanje prikazane napovedi ob spremembi lokacije
 // TODO: prikaz vremena (prikaz vremena za vnaprej?)
+// TODO: poenotene barve v grafih
+
+// TODO: spremenit kolk velki so krogi - fine tuning?
