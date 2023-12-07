@@ -172,15 +172,28 @@ fetch("getContent.php")
                     selectedData.stations[i].numberOfBikes * currentZoom * 2
                 );
 
-                var updatedIcon = L.divIcon({
-                    className: "my-div-icon",
-                    html:
-                        '<div class="circle_num_of_bikes hidden">' +
-                        selectedData.stations[i].numberOfBikes +
-                        "/" +
-                        selectedData.stations[i].numberOfLocks +
-                        "</div>",
-                });
+                var updatedIcon;
+                if (currentZoom < 15) {
+                    updatedIcon = L.divIcon({
+                        className: "my-div-icon",
+                        html:
+                            '<div class="circle_num_of_bikes hidden">' +
+                            selectedData.stations[i].numberOfBikes +
+                            "/" +
+                            selectedData.stations[i].numberOfLocks +
+                            "</div>",
+                    });
+                } else {
+                    updatedIcon = L.divIcon({
+                        className: "my-div-icon",
+                        html:
+                            '<div class="circle_num_of_bikes">' +
+                            selectedData.stations[i].numberOfBikes +
+                            "/" +
+                            selectedData.stations[i].numberOfLocks +
+                            "</div>",
+                    });
+                }
                 location_text[i].setIcon(updatedIcon);
 
                 if (selectedData.stations[i].id == activeStation) {
