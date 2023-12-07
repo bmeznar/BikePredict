@@ -77,8 +77,19 @@ body {
 #main-content .left_content .loc_header_title {
   font-size: 1.5rem;
 }
-#main-content .left_content .loc_content {
+#main-content .left_content .loc_charts {
   background-color: white;
+}
+#main-content .left_content .loc_charts_history #station_history {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+#main-content .left_content .loc_charts_prediction h4 {
+  margin-bottom: 20px;
+}
+#main-content .left_content .loc_charts_prediction #station_prediction {
+  margin-bottom: 30px;
+  padding: 10px;
 }
 #main-content .left_content hr {
   border: 0.5px solid #B4B4B4;

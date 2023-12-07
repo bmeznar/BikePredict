@@ -103,8 +103,28 @@ body {
         }
       }
 
-      &_content {
+      &_charts {
         background-color: white;
+
+        &_history {
+
+          #station_history {
+            margin-top: 30px;
+            margin-bottom: 45px;
+          }
+        }
+
+        &_prediction {
+
+          h4 {
+            margin-bottom: 20px;
+          }
+
+          #station_prediction {
+            margin-bottom: 30px;
+            padding: 10px;
+          }
+        }
       }
     }
 

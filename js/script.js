@@ -238,14 +238,19 @@ let bikeHistoryChart = new Chart(station_history, {
                 label: "Na postaji",
                 data: [12, 3, 5],
                 borderWidth: 1,
+                backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
             },
         ],
     },
     options: {
+        legend: {
+            display: true,
+            position: "right",
+        },
         plugins: {
-            legend: {
-                display: true,
-                position: "right",
+            labels: {
+                render: "value",
+                fontColor: "white",
             },
         },
     },
@@ -261,24 +266,31 @@ let predictionChart = new Chart(station_prediction, {
                 label: "Predvidena razpoložljivost koles",
                 data: [5, 8, 4, 9],
                 tension: 0.4,
+                backgroundColor: "#FF6384",
+                fill: false,
+                borderColor: "#FF6384",
             },
             {
                 label: "Predvidena razpoložljivost el. koles",
                 data: [3, 2, 1, 5],
                 tension: 0.4,
+                backgroundColor: "#478f43",
+                fill: false,
+                borderColor: "#478f43",
             },
         ],
     },
     options: {
         responsive: true,
+        legend: {
+            display: true,
+            position: "bottom",
+            align: "start",
+        },
         plugins: {
             title: {
                 display: false,
                 text: "Napoved razpoložljivosti koles",
-            },
-            legend: {
-                display: true,
-                position: "bottom",
             },
         },
         interaction: {
@@ -297,8 +309,7 @@ let predictionChart = new Chart(station_prediction, {
                     display: true,
                     text: "Št. koles",
                 },
-                suggestedMin: 0,
-                suggestedMax: 10,
+                max: 10,
             },
         },
     },
