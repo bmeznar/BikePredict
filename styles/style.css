@@ -23,6 +23,17 @@ body {
   filter: hue-rotate(120deg);
 }
 
+.circle_num_of_bikes {
+  font-family: "Gill Sans MT";
+  color: #00d9ff;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
 .header {
   background-color: #1F1F1F;
   padding: 20px;

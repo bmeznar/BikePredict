@@ -1,4 +1,5 @@
 let locations_circles = [];
+let location_text = [];
 
 //prikaz in skritje playerja
 $("#hideBtn").on("click", function () {
@@ -66,10 +67,10 @@ fetch("getContent.php")
                 activeStation = element.id;
             }
 
-            let marker = L.marker(
-                [element.latitude, element.longitude],
-                (interactive = true)
-            )
+            // markerji lokacij
+            let marker = L.marker([element.latitude, element.longitude], {
+                interactive: true,
+            })
                 .addTo(map)
                 .on("click", function (e) {
                     changeActiveStation(this, element.id);
@@ -79,6 +80,25 @@ fetch("getContent.php")
                 L.DomUtil.addClass(marker._icon, "activeMarker");
             }
 
+            // napis št. prostih koles
+            var myIcon = L.divIcon({
+                className: "my-div-icon",
+                html:
+                    '<div class="circle_num_of_bikes hidden">' +
+                    element.numberOfFreeBikes +
+                    "/" +
+                    element.numberOfLocks +
+                    "</div>",
+            });
+            let text = L.marker(
+                [element.latitude - 0.0002, element.longitude - 0.0001],
+                {
+                    icon: myIcon,
+                }
+            ).addTo(heatmap);
+            location_text.push(text);
+
+            //krogi
             let circle = L.circle([element.latitude, element.longitude], {
                 color: "transparent",
                 fillColor: "#f03",
@@ -152,6 +172,17 @@ fetch("getContent.php")
                     selectedData.stations[i].numberOfBikes * currentZoom * 2
                 );
 
+                var updatedIcon = L.divIcon({
+                    className: "my-div-icon",
+                    html:
+                        '<div class="circle_num_of_bikes hidden">' +
+                        selectedData.stations[i].numberOfBikes +
+                        "/" +
+                        selectedData.stations[i].numberOfLocks +
+                        "</div>",
+                });
+                location_text[i].setIcon(updatedIcon);
+
                 if (selectedData.stations[i].id == activeStation) {
                     updateGraphs(selectedData.stations[i]);
                     stationName.innerHTML = selectedData.stations[i].name;
@@ -174,7 +205,19 @@ fetch("getContent.php")
         // funkcija spreminjanja ob zoomu
         map.on("zoomend", function () {
             currentZoom = map.getZoom();
+            // console.log(currentZoom);
             updateDataDisplay(currentIndex);
+            if (currentZoom < 15) {
+                $(".circle_num_of_bikes").each(function () {
+                    $(this).addClass("hidden");
+                });
+                console.log("hide");
+            } else {
+                $(".circle_num_of_bikes").each(function () {
+                    console.log($(this));
+                    $(this).removeClass("hidden");
+                });
+            }
         });
     })
     .catch((error) => {
