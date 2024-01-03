@@ -40,7 +40,10 @@
                             </div>
                             <div class="loc_charts_prediction">
                                 <h4>Napoved razpoložljivosti koles:</h4>
-                                <canvas id="station_prediction"></canvas>
+                                <canvas
+                                    id="station_prediction"
+                                    height="200"
+                                ></canvas>
                             </div>
                         </div>
                     </div>
@@ -85,10 +88,17 @@
                                 <span class="time" id="time_data"></span>
                             </div>
                             <div class="weatherWrapper">
-                                <div class="weatherIconWrapper">
+                                <div
+                                    class="weatherIconWrapper"
+                                    id="weather_icon"
+                                >
                                     <i class="fa-solid fa-cloud-sun-rain"></i>
                                 </div>
-                                <span class="weather_info">16°C</span>
+                                <span
+                                    class="weather_info"
+                                    id="weather_temperature"
+                                    >16°C</span
+                                >
                             </div>
                         </div>
 

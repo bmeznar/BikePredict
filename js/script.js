@@ -35,207 +35,292 @@ map.addLayer(Stadia_AlidadeSmoothDark);
 
 var heatmap = L.layerGroup();
 
+getContent();
+console.log("test");
+$.ajax({
+    type: "GET",
+    url: "saveToJson.php",
+    data: {},
+    success: function () {
+        console.log("data loaded");
+        getContent();
+    },
+});
+
 // P R E D V A J A N J E   P O D A T K O V
-fetch("getContent.php")
-    .then((response) => response.json())
-    .then((data) => {
-        // console.log(data["numberOfTimestamps"]);
-        // console.log(data);
-        const timestamps = data["timestamps"];
+function getContent() {
+    fetch("getContent.php")
+        .then((response) => response.json())
+        .then((data) => {
+            // console.log(data["numberOfTimestamps"]);
+            // console.log(data);
+            // const timestamps = data["timestamps"];
 
-        const dataSlider = document.getElementById("myRange");
-        const timeDisplay = document.getElementById("time_data");
-        const dateDisplay = document.getElementById("date_data");
-        const jsonData = data["timestamps"];
-        const playBtn = document.getElementById("playBtn");
-        const pauseBtn = document.getElementById("pauseBtn");
-        const stationName = document.getElementById("loc_name");
+            const dataSlider = document.getElementById("myRange");
+            const timeDisplay = document.getElementById("time_data");
+            const dateDisplay = document.getElementById("date_data");
+            const jsonData = data["stations_info"]["timestamps"];
+            const playBtn = document.getElementById("playBtn");
+            const pauseBtn = document.getElementById("pauseBtn");
+            const stationName = document.getElementById("loc_name");
+            const predictions = data["predictions"];
 
-        let isPlaying = false;
-        let currentIndex = 0;
-        let intervalId;
-        let activeStation;
-        let currentZoom = map.getZoom();
+            let isPlaying = false;
+            let currentIndex = 0;
+            let intervalId;
+            let activeStation;
+            let currentZoom = map.getZoom();
 
-        // nastavimo stevilo korakov sliderja
-        dataSlider.max = data["numberOfTimestamps"];
+            let weatherrIconDiv = document.getElementById("weather_icon");
+            let weatherTempDiv = document.getElementById("weather_temperature");
 
-        //inicializiramo markerje lokacij in narisane kroge
-        const locations = jsonData[0].stations;
-        locations.forEach((element) => {
-            if (!activeStation) {
-                activeStation = element.id;
-            }
+            // nastavimo stevilo korakov sliderja
+            dataSlider.max = data["numberOfTimestamps"];
 
-            // markerji lokacij
-            let marker = L.marker([element.latitude, element.longitude], {
-                interactive: true,
-            })
-                .addTo(map)
-                .on("click", function (e) {
-                    changeActiveStation(this, element.id);
-                });
-
-            if (element.id == activeStation) {
-                L.DomUtil.addClass(marker._icon, "activeMarker");
-            }
-
-            // napis št. prostih koles
-            var myIcon = L.divIcon({
-                className: "my-div-icon",
-                html:
-                    '<div class="circle_num_of_bikes hidden">' +
-                    element.numberOfFreeBikes +
-                    "/" +
-                    element.numberOfLocks +
-                    "</div>",
-            });
-            let text = L.marker(
-                [element.latitude - 0.0002, element.longitude - 0.0001],
-                {
-                    icon: myIcon,
+            //inicializiramo markerje lokacij in narisane kroge
+            const locations = jsonData[0].stations;
+            locations.forEach((element) => {
+                if (!activeStation) {
+                    activeStation = element.id;
                 }
-            ).addTo(heatmap);
-            location_text.push(text);
 
-            //krogi
-            let circle = L.circle([element.latitude, element.longitude], {
-                color: "transparent",
-                fillColor: "#f03",
-                fillOpacity: 0.5,
-                radius: element.numberOfBikes * currentZoom,
-            }).addTo(heatmap);
-            locations_circles.push(circle);
-        });
-        heatmap.addTo(map);
+                // markerji lokacij
+                let marker = L.marker([element.latitude, element.longitude], {
+                    interactive: true,
+                })
+                    .addTo(map)
+                    .on("click", function (e) {
+                        changeActiveStation(this, element.id);
+                    });
 
-        //inicializacija prikaza podatkov na zemljevidu
-        updateDataDisplay(currentIndex);
+                if (element.id == activeStation) {
+                    L.DomUtil.addClass(marker._icon, "activeMarker");
+                }
 
-        // premikanje sliderja
-        dataSlider.addEventListener("input", function () {
-            updateDataDisplay(this.value);
-            currentIndex = parseInt(this.value);
-        });
+                // napis št. prostih koles
+                var myIcon = L.divIcon({
+                    className: "my-div-icon",
+                    html:
+                        '<div class="circle_num_of_bikes hidden">' +
+                        element.numberOfFreeBikes +
+                        "/" +
+                        element.numberOfLocks +
+                        "</div>",
+                });
+                let text = L.marker(
+                    [element.latitude - 0.0002, element.longitude - 0.0001],
+                    {
+                        icon: myIcon,
+                    }
+                ).addTo(heatmap);
+                location_text.push(text);
 
-        // play gumb
-        playBtn.addEventListener("click", function () {
-            if (!isPlaying) {
-                playSlider();
-                isPlaying = true;
-            }
-        });
+                //krogi
+                let circle = L.circle([element.latitude, element.longitude], {
+                    color: "transparent",
+                    fillColor: "#f03",
+                    fillOpacity: 0.5,
+                    radius: element.numberOfBikes * currentZoom,
+                }).addTo(heatmap);
+                locations_circles.push(circle);
+            });
+            heatmap.addTo(map);
 
-        // pause gumb
-        pauseBtn.addEventListener("click", function () {
-            if (isPlaying) {
-                clearInterval(intervalId);
-                isPlaying = false;
-            }
-        });
+            //inicializacija prikaza podatkov na zemljevidu
+            updateDataDisplay(currentIndex);
 
-        // predvajanje sliderja
-        function playSlider() {
-            intervalId = setInterval(function () {
-                currentIndex = (currentIndex + 1) % jsonData.length;
-                dataSlider.value = currentIndex;
-                updateDataDisplay(currentIndex);
+            // premikanje sliderja
+            dataSlider.addEventListener("input", function () {
+                updateDataDisplay(this.value);
+                currentIndex = parseInt(this.value);
+            });
 
-                if (currentIndex === 0) {
+            // play gumb
+            playBtn.addEventListener("click", function () {
+                if (!isPlaying) {
+                    playSlider();
+                    isPlaying = true;
+                }
+            });
+
+            // pause gumb
+            pauseBtn.addEventListener("click", function () {
+                if (isPlaying) {
                     clearInterval(intervalId);
                     isPlaying = false;
                 }
-            }, 1000); // nastavljanje intervala
-        }
-
-        // updatanje prikazanih podatkov pri predvajanju
-        function updateDataDisplay(index) {
-            const selectedData = jsonData[index];
-
-            const dateObject = new Date(selectedData.timestamp);
-            const formattedDate = dateObject.toLocaleDateString("sl-SI", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
             });
-            const formattedTime = dateObject.toLocaleTimeString(undefined, {
-                hour: "2-digit",
-                minute: "2-digit",
-            });
-            // console.log("Date:", formattedDate);
-            // console.log("Time:", formattedTime);
 
-            timeDisplay.textContent = `${formattedTime}`;
-            dateDisplay.textContent = `${formattedDate}`;
-            for (let i = 0; i < selectedData.stations.length; i++) {
-                locations_circles[i].setRadius(
-                    selectedData.stations[i].numberOfBikes * currentZoom * 2
+            // predvajanje sliderja
+            function playSlider() {
+                intervalId = setInterval(function () {
+                    currentIndex = (currentIndex + 1) % jsonData.length;
+                    dataSlider.value = currentIndex;
+                    updateDataDisplay(currentIndex);
+
+                    if (currentIndex === 0) {
+                        clearInterval(intervalId);
+                        isPlaying = false;
+                    }
+                }, 1000); // nastavljanje intervala
+            }
+
+            // updatanje prikazanih podatkov pri predvajanju
+            function updateDataDisplay(index) {
+                const selectedData = jsonData[index];
+
+                const dateObject = new Date(selectedData.timestamp);
+                const formattedDate = dateObject.toLocaleDateString("sl-SI", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                });
+                const formattedTime = dateObject.toLocaleTimeString(undefined, {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                });
+                // console.log("Date:", formattedDate);
+                // console.log("Time:", formattedTime);
+
+                timeDisplay.textContent = `${formattedTime}`;
+                dateDisplay.textContent = `${formattedDate}`;
+                updateWeather(selectedData.weather, 0);
+                for (let i = 0; i < selectedData.stations.length; i++) {
+                    locations_circles[i].setRadius(
+                        selectedData.stations[i].numberOfBikes * currentZoom * 2
+                    );
+
+                    var updatedIcon;
+                    if (currentZoom < 15) {
+                        updatedIcon = L.divIcon({
+                            className: "my-div-icon",
+                            html:
+                                '<div class="circle_num_of_bikes hidden">' +
+                                selectedData.stations[i].numberOfBikes +
+                                "/" +
+                                selectedData.stations[i].numberOfLocks +
+                                "</div>",
+                        });
+                    } else {
+                        updatedIcon = L.divIcon({
+                            className: "my-div-icon",
+                            html:
+                                '<div class="circle_num_of_bikes">' +
+                                selectedData.stations[i].numberOfBikes +
+                                "/" +
+                                selectedData.stations[i].numberOfLocks +
+                                "</div>",
+                        });
+                    }
+                    location_text[i].setIcon(updatedIcon);
+
+                    if (selectedData.stations[i].id == activeStation) {
+                        updateGraphs(selectedData.stations[i], predictions);
+                        stationName.innerHTML = selectedData.stations[i].name;
+                    }
+                }
+            }
+
+            function changeActiveStation(context, stationID) {
+                activeStation = stationID;
+                const selectedData = jsonData[currentIndex];
+                let index = selectedData.stations.findIndex(
+                    (station) => station.id === activeStation
                 );
+                updateGraphs(selectedData.stations[index], predictions);
+                stationName.innerHTML = selectedData.stations[index].name;
+                $(".leaflet-marker-icon.activeMarker").removeClass(
+                    "activeMarker"
+                );
+                context._icon.classList.add("activeMarker");
+            }
 
-                var updatedIcon;
+            function updateWeather(weathercode, temperature) {
+                console.log(weathercode);
+                switch (weathercode) {
+                    case 0:
+                        weatherrIconDiv.innerHTML =
+                            "<i class='fa-solid fa-sun'></i>";
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        weatherrIconDiv.innerHTML =
+                            "<i class='fa-solid fa-cloud-sun'></i>";
+                        break;
+                    case 45:
+                    case 48:
+                        weatherrIconDiv.innerHTML =
+                            "<i class='fa-solid fa-smog'></i>";
+                        break;
+                    case 51:
+                    case 53:
+                    case 55:
+                    case 81:
+                    case 83:
+                    case 85:
+                        weatherrIconDiv.innerHTML =
+                            "<i class='fa-solid fa-cloud-rain'></i>";
+                        break;
+                    case 56:
+                    case 57:
+                        weatherrIconDiv.innerHTML = "freezing drizzle";
+                        break;
+                    case 61:
+                    case 63:
+                    case 65:
+                    case 56:
+                    case 57:
+                        weatherrIconDiv.innerHTML =
+                            "<i class='fa-solid fa-cloud-showers-heavy'></i>";
+                        break;
+                    case 71:
+                    case 73:
+                    case 75:
+                    case 77:
+                    case 85:
+                    case 86:
+                        weatherrIconDiv.innerHTML =
+                            "<i class='fa-solid fa-snowflake'></i></i>";
+                        break;
+                    case 95:
+                    case 96:
+                    case 99:
+                        weatherrIconDiv.innerHTML =
+                            "<i class='fa-solid fa-cloud-bolt'></i>";
+                        break;
+                    default:
+                        weatherrIconDiv.innerHTML =
+                            "<i class='fa-solid fa-exclamation'></i>";
+                        break;
+                }
+
+                // weatherrIconDiv.innerHTML =
+                //     "<i class='fa-solid fa-cloud-sun-rain'></i>";
+            }
+
+            // funkcija spreminjanja ob zoomu
+            map.on("zoomend", function () {
+                currentZoom = map.getZoom();
+                // console.log(currentZoom);
+                updateDataDisplay(currentIndex);
                 if (currentZoom < 15) {
-                    updatedIcon = L.divIcon({
-                        className: "my-div-icon",
-                        html:
-                            '<div class="circle_num_of_bikes hidden">' +
-                            selectedData.stations[i].numberOfBikes +
-                            "/" +
-                            selectedData.stations[i].numberOfLocks +
-                            "</div>",
+                    $(".circle_num_of_bikes").each(function () {
+                        $(this).addClass("hidden");
                     });
+                    console.log("hide");
                 } else {
-                    updatedIcon = L.divIcon({
-                        className: "my-div-icon",
-                        html:
-                            '<div class="circle_num_of_bikes">' +
-                            selectedData.stations[i].numberOfBikes +
-                            "/" +
-                            selectedData.stations[i].numberOfLocks +
-                            "</div>",
+                    $(".circle_num_of_bikes").each(function () {
+                        console.log($(this));
+                        $(this).removeClass("hidden");
                     });
                 }
-                location_text[i].setIcon(updatedIcon);
-
-                if (selectedData.stations[i].id == activeStation) {
-                    updateGraphs(selectedData.stations[i]);
-                    stationName.innerHTML = selectedData.stations[i].name;
-                }
-            }
-        }
-
-        function changeActiveStation(context, stationID) {
-            activeStation = stationID;
-            const selectedData = jsonData[currentIndex];
-            let index = selectedData.stations.findIndex(
-                (station) => station.id === activeStation
-            );
-            updateGraphs(selectedData.stations[index]);
-            stationName.innerHTML = selectedData.stations[index].name;
-            $(".leaflet-marker-icon.activeMarker").removeClass("activeMarker");
-            context._icon.classList.add("activeMarker");
-        }
-
-        // funkcija spreminjanja ob zoomu
-        map.on("zoomend", function () {
-            currentZoom = map.getZoom();
-            // console.log(currentZoom);
-            updateDataDisplay(currentIndex);
-            if (currentZoom < 15) {
-                $(".circle_num_of_bikes").each(function () {
-                    $(this).addClass("hidden");
-                });
-                console.log("hide");
-            } else {
-                $(".circle_num_of_bikes").each(function () {
-                    console.log($(this));
-                    $(this).removeClass("hidden");
-                });
-            }
+            });
+        })
+        .catch((error) => {
+            console.error("Error fetching JSON:", error);
         });
-    })
-    .catch((error) => {
-        console.error("Error fetching JSON:", error);
-    });
+}
 
 // G R A F I
 const station_history = document.getElementById("station_history");
@@ -271,7 +356,7 @@ let bikeHistoryChart = new Chart(station_history, {
 
 //izris grafa za napoved razpoložljivosti
 let predictionChart = new Chart(station_prediction, {
-    type: "line",
+    type: "bar",
     data: {
         labels: ["zjutraj", "dopoldne", "popoldne", "zvečer"],
         datasets: [
@@ -282,23 +367,17 @@ let predictionChart = new Chart(station_prediction, {
                 backgroundColor: "#FF6384",
                 fill: false,
                 borderColor: "#FF6384",
-            },
-            {
-                label: "Predvidena razpoložljivost el. koles",
-                data: [3, 2, 1, 5],
-                tension: 0.4,
-                backgroundColor: "#478f43",
-                fill: false,
-                borderColor: "#478f43",
+                showTooltips: true,
             },
         ],
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         legend: {
             display: true,
             position: "bottom",
-            align: "start",
+            align: "center",
         },
         plugins: {
             title: {
@@ -306,29 +385,43 @@ let predictionChart = new Chart(station_prediction, {
                 text: "Napoved razpoložljivosti koles",
             },
         },
-        interaction: {
-            intersect: false,
-        },
         scales: {
-            x: {
-                display: true,
-                title: {
+            xAxes: [
+                {
                     display: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: "",
+                    },
                 },
-            },
-            y: {
-                display: true,
-                title: {
+            ],
+            yAxes: [
+                {
+                    ticks: {
+                        beginAtZero: true,
+                        max: 10,
+                    },
                     display: true,
-                    text: "Št. koles",
+                    scaleLabel: {
+                        display: true,
+                        labelString: "Št. koles",
+                    },
                 },
-                max: 10,
-            },
+            ],
         },
     },
 });
 
-function updateGraphs(station) {
+function updateGraphs(station, predictions) {
+    days = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+    ];
     bikeHistoryChart.data.datasets[0].data = [
         station.numberOfBikes,
         station.numberOfFreeLocks,
@@ -336,11 +429,16 @@ function updateGraphs(station) {
     ];
     // console.log(station.numberOfFreeLocks);
     bikeHistoryChart.update();
+
+    const today = new Date().getDay();
+    let day = days[today];
+    // console.log(predictions[station.id][day]);
+    let todayPrediction = predictions[station.id][day];
+    predictionChart.data.datasets[0].data = [
+        Math.ceil(todayPrediction["Morning"]),
+        Math.ceil(todayPrediction["Evening"]),
+        Math.ceil(todayPrediction["Afternoon"]),
+        Math.ceil(todayPrediction["Night"]),
+    ];
+    predictionChart.update();
 }
-
-// TODO: hover na markerju izpiše št. koles
-// TODO: spreminjanje prikazane napovedi ob spremembi lokacije
-// TODO: prikaz vremena (prikaz vremena za vnaprej?)
-// TODO: poenotene barve v grafih
-
-// TODO: spremenit kolk velki so krogi - fine tuning?
