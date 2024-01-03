@@ -1,2 +1,2642 @@
-Error 404: Not Found
-Unknown Resource (/gbapi/predictor.json)
+{
+  "145": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "129": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.2534722222222222,
+      "Night": 0.2465277777777778
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "153": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0.06944444444444445,
+      "Afternoon": 0.5,
+      "Morning": 0.4305555555555556,
+      "Night": 0.0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "158": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "159": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "154": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 1.0,
+      "Night": 0.0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "62": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "92": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "96": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "157": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0.2608695652173913,
+      "Afternoon": 0.391304347826087,
+      "Morning": 0.34782608695652173,
+      "Night": 0.0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "84": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "38": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    }
+  },
+  "173": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "156": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "28": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0.379746835443038,
+      "Afternoon": 0.10126582278481013,
+      "Morning": 0.379746835443038,
+      "Night": 0.13924050632911392
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "101": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "34": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "179": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "19": {
+    "Saturday": {
+      "Evening": 0.23529411764705882,
+      "Afternoon": 0.6078431372549019,
+      "Morning": 0.09803921568627451,
+      "Night": 0.058823529411764705
+    },
+    "Friday": {
+      "Evening": 0.06086956521739131,
+      "Afternoon": 0.3130434782608696,
+      "Morning": 0.4,
+      "Night": 0.22608695652173913
+    },
+    "Thursday": {
+      "Evening": 0.8,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.2
+    },
+    "Wednesday": {
+      "Evening": 0.8333333333333334,
+      "Afternoon": 0.16666666666666666,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Tuesday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Monday": {
+      "Evening": 0.6875,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.3125
+    },
+    "Sunday": {
+      "Evening": 0.7272727272727273,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.2727272727272727
+    }
+  },
+  "97": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "64": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0.8888888888888888,
+      "Afternoon": 0.1111111111111111,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "171": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "88": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "146": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "155": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "178": {
+    "Saturday": {
+      "Evening": 0.4444444444444444,
+      "Afternoon": 0.0,
+      "Morning": 0.3888888888888889,
+      "Night": 0.16666666666666666
+    },
+    "Friday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "35": {
+    "Saturday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "70": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "196": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "144": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "172": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "37": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0.7777777777777778,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.2222222222222222
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "91": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "175": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0.0,
+      "Afternoon": 0.21153846153846154,
+      "Morning": 0.6923076923076923,
+      "Night": 0.09615384615384616
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "6": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "14": {
+    "Saturday": {
+      "Evening": 0.16666666666666666,
+      "Afternoon": 0.3333333333333333,
+      "Morning": 0.5,
+      "Night": 0.0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Tuesday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Monday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Sunday": {
+      "Evening": 0.5,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.5
+    }
+  },
+  "18": {
+    "Saturday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "8": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "17": {
+    "Saturday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "48": {
+    "Saturday": {
+      "Evening": 0.5333333333333333,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.4666666666666667
+    },
+    "Friday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0.12987012987012986,
+      "Afternoon": 0.4675324675324675,
+      "Morning": 0.4025974025974026,
+      "Night": 0.0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Sunday": {
+      "Evening": 0.18823529411764706,
+      "Afternoon": 0.4235294117647059,
+      "Morning": 0.38823529411764707,
+      "Night": 0.0
+    }
+  },
+  "36": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "87": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "60": {
+    "Saturday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 1.0,
+      "Night": 0.0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "98": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "65": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "49": {
+    "Saturday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Friday": {
+      "Evening": 0.28695652173913044,
+      "Afternoon": 0.3130434782608696,
+      "Morning": 0.3130434782608696,
+      "Night": 0.08695652173913043
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "66": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0.2625,
+      "Afternoon": 0.45,
+      "Morning": 0.2875,
+      "Night": 0.0
+    }
+  },
+  "25": {
+    "Saturday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Friday": {
+      "Evening": 0.3157894736842105,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.6842105263157895
+    },
+    "Thursday": {
+      "Evening": 0.1724137931034483,
+      "Afternoon": 0.3793103448275862,
+      "Morning": 0.4482758620689655,
+      "Night": 0.0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Monday": {
+      "Evening": 0.10714285714285714,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.8928571428571429
+    },
+    "Sunday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    }
+  },
+  "26": {
+    "Saturday": {
+      "Evening": 0.42857142857142855,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.5714285714285714
+    },
+    "Friday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Thursday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 1.0,
+      "Night": 0.0
+    },
+    "Monday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Sunday": {
+      "Evening": 0.1981981981981982,
+      "Afternoon": 0.2702702702702703,
+      "Morning": 0.2882882882882883,
+      "Night": 0.24324324324324326
+    }
+  },
+  "24": {
+    "Saturday": {
+      "Evening": 0.21052631578947367,
+      "Afternoon": 0.47368421052631576,
+      "Morning": 0.3157894736842105,
+      "Night": 0.0
+    },
+    "Friday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Thursday": {
+      "Evening": 0.19540229885057472,
+      "Afternoon": 0.41379310344827586,
+      "Morning": 0.39080459770114945,
+      "Night": 0.0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0.375,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.625
+    },
+    "Monday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "16": {
+    "Saturday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.2,
+      "Night": 0.8
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "27": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Thursday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0.6956521739130435,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.30434782608695654
+    }
+  },
+  "63": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0.3,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.7
+    },
+    "Thursday": {
+      "Evening": 0.3684210526315789,
+      "Afternoon": 0.37894736842105264,
+      "Morning": 0.23157894736842105,
+      "Night": 0.021052631578947368
+    },
+    "Wednesday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 1.0,
+      "Night": 0.0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0.32967032967032966,
+      "Afternoon": 0.3956043956043956,
+      "Morning": 0.27472527472527475,
+      "Night": 0.0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "61": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 1.0
+    },
+    "Thursday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 1.0,
+      "Night": 0.0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0.23076923076923078,
+      "Afternoon": 0.38461538461538464,
+      "Morning": 0.34615384615384615,
+      "Night": 0.038461538461538464
+    },
+    "Sunday": {
+      "Evening": 1.0,
+      "Afternoon": 0.0,
+      "Morning": 0.0,
+      "Night": 0.0
+    }
+  },
+  "89": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "99": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "85": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  },
+  "90": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "86": {
+    "Saturday": {
+      "Evening": 0.20551378446115287,
+      "Afternoon": 0.2706766917293233,
+      "Morning": 0.2706766917293233,
+      "Night": 0.2531328320802005
+    },
+    "Friday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Thursday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Wednesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Tuesday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Monday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    },
+    "Sunday": {
+      "Evening": 0.25,
+      "Afternoon": 0.25,
+      "Morning": 0.25,
+      "Night": 0.25
+    }
+  },
+  "15": {
+    "Saturday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Friday": {
+      "Evening": 0.0,
+      "Afternoon": 0.0,
+      "Morning": 0.1,
+      "Night": 0.9
+    },
+    "Thursday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Wednesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Tuesday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Monday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    },
+    "Sunday": {
+      "Evening": 0,
+      "Afternoon": 0,
+      "Morning": 0,
+      "Night": 0
+    }
+  }
+}

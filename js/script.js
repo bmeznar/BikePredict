@@ -36,16 +36,16 @@ map.addLayer(Stadia_AlidadeSmoothDark);
 var heatmap = L.layerGroup();
 
 getContent();
-console.log("test");
-$.ajax({
-    type: "GET",
-    url: "saveToJson.php",
-    data: {},
-    success: function () {
-        console.log("data loaded");
-        getContent();
-    },
-});
+// api za podatke o postajah ne dela :()
+// $.ajax({
+//     type: "GET",
+//     url: "saveToJson.php",
+//     data: {},
+//     success: function () {
+//         console.log("data loaded");
+//         getContent();
+//     },
+// });
 
 // P R E D V A J A N J E   P O D A T K O V
 function getContent() {
@@ -53,7 +53,7 @@ function getContent() {
         .then((response) => response.json())
         .then((data) => {
             // console.log(data["numberOfTimestamps"]);
-            // console.log(data);
+            console.log(data);
             // const timestamps = data["timestamps"];
 
             const dataSlider = document.getElementById("myRange");
@@ -75,7 +75,7 @@ function getContent() {
             let weatherTempDiv = document.getElementById("weather_temperature");
 
             // nastavimo stevilo korakov sliderja
-            dataSlider.max = data["numberOfTimestamps"];
+            dataSlider.max = data["stations_info"]["numberOfTimestamps"];
 
             //inicializiramo markerje lokacij in narisane kroge
             const locations = jsonData[0].stations;
