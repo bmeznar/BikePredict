@@ -2,7 +2,8 @@
 
 try {
     // First JSON response
-    $jsonFilePath1 = './bike_data.json';
+    // $jsonFilePath1 = './bike_data.json';
+    $jsonFilePath1 = './bikePredictFinal.json';
     $jsonData1 = file_get_contents($jsonFilePath1);
     $data1 = json_decode($jsonData1, true);
 

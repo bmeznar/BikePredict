@@ -184,7 +184,7 @@ function getContent() {
 
                 timeDisplay.textContent = `${formattedTime}`;
                 dateDisplay.textContent = `${formattedDate}`;
-                updateWeather(selectedData.weather, 0);
+                updateWeather(selectedData.weather, selectedData.temperature);
                 for (let i = 0; i < selectedData.stations.length; i++) {
                     locations_circles[i].setRadius(
                         selectedData.stations[i].numberOfBikes * currentZoom * 2
@@ -238,65 +238,66 @@ function getContent() {
             function updateWeather(weathercode, temperature) {
                 console.log(weathercode);
                 switch (weathercode) {
-                    case 0:
+                    case "0":
                         weatherrIconDiv.innerHTML =
                             "<i class='fa-solid fa-sun'></i>";
                         break;
-                    case 1:
-                    case 2:
-                    case 3:
+                    case "1":
+                    case "2":
+                    case "3":
                         weatherrIconDiv.innerHTML =
                             "<i class='fa-solid fa-cloud-sun'></i>";
                         break;
-                    case 45:
-                    case 48:
+                    case "45":
+                    case "48":
                         weatherrIconDiv.innerHTML =
                             "<i class='fa-solid fa-smog'></i>";
                         break;
-                    case 51:
-                    case 53:
-                    case 55:
-                    case 81:
-                    case 83:
-                    case 85:
+                    case "51":
+                    case "53":
+                    case "55":
+                    case "81":
+                    case "83":
+                    case "85":
                         weatherrIconDiv.innerHTML =
                             "<i class='fa-solid fa-cloud-rain'></i>";
                         break;
-                    case 56:
-                    case 57:
+                    case "56":
+                    case "57":
                         weatherrIconDiv.innerHTML = "freezing drizzle";
                         break;
-                    case 61:
-                    case 63:
-                    case 65:
-                    case 56:
-                    case 57:
+                    case "61":
+                    case "63":
+                    case "65":
+                    case "56":
+                    case "57":
                         weatherrIconDiv.innerHTML =
                             "<i class='fa-solid fa-cloud-showers-heavy'></i>";
                         break;
-                    case 71:
-                    case 73:
-                    case 75:
-                    case 77:
-                    case 85:
-                    case 86:
+                    case "71":
+                    case "73":
+                    case "75":
+                    case "77":
+                    case "85":
+                    case "86":
                         weatherrIconDiv.innerHTML =
                             "<i class='fa-solid fa-snowflake'></i></i>";
                         break;
-                    case 95:
-                    case 96:
-                    case 99:
+                    case "95":
+                    case "96":
+                    case "99":
                         weatherrIconDiv.innerHTML =
                             "<i class='fa-solid fa-cloud-bolt'></i>";
                         break;
                     default:
                         weatherrIconDiv.innerHTML =
-                            "<i class='fa-solid fa-exclamation'></i>";
+                            "<i class='fa-solid fa-cloud'></i>";
                         break;
                 }
 
                 // weatherrIconDiv.innerHTML =
                 //     "<i class='fa-solid fa-cloud-sun-rain'></i>";
+                weatherTempDiv.innerHTML = temperature + "°C";
             }
 
             // funkcija spreminjanja ob zoomu
