@@ -166,6 +166,12 @@ body {
       transition: 1s linear;
       padding-top: 25px;
 
+      .start-end-time-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
       .media_player_title {
         font-size: 1.2rem;
         font-style: italic;
@@ -181,6 +187,7 @@ body {
         border-radius: 50%;
         display: inline;
         border: 1px solid #1F1F1F;
+        box-shadow: 0px 0px 7px rgba(0,0,0,0.5);
       }
 
       .hide_show_player:hover {
@@ -189,6 +196,9 @@ body {
 
       .slider_container {
         padding: 20px 0 10px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
       }
 
       .button-wrapper {
@@ -201,10 +211,21 @@ body {
           border-radius: 7px;
           border: 1px solid $carbon;
           background-color: $neutral;
+          box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+          transition: 0.5s;
 
           i{
             color: $watermelon;
           }
+        }
+
+        button:hover {
+          background-color: #d9d9d9;
+        }
+
+        .activated {
+          background-color: #d9d9d9;
+          box-shadow: 1px 1px 0px rgba(0,0,0,0.5);
         }
       }
 

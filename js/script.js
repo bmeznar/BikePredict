@@ -53,7 +53,7 @@ function getContent() {
         .then((response) => response.json())
         .then((data) => {
             // console.log(data["numberOfTimestamps"]);
-            console.log(data);
+            // console.log(data);
             // const timestamps = data["timestamps"];
 
             const dataSlider = document.getElementById("myRange");
@@ -66,13 +66,41 @@ function getContent() {
             const predictions = data["predictions"];
 
             let isPlaying = false;
-            let currentIndex = 0;
+            // let currentIndex = 0;
+            let currentIndex = jsonData.length - 1;
             let intervalId;
             let activeStation;
             let currentZoom = map.getZoom();
 
             let weatherrIconDiv = document.getElementById("weather_icon");
             let weatherTempDiv = document.getElementById("weather_temperature");
+            let startTime = document.getElementById("start-time");
+            let endTime = document.getElementById("end-time");
+
+            // nastavljanje prikazanih datumov zacetka in konca
+            let dateObject = new Date(jsonData[0]["timestamp"]);
+            let formattedDate = dateObject.toLocaleDateString("sl-SI", {
+                day: "numeric",
+                month: "numeric",
+                year: "numeric",
+            });
+            let formattedTime = dateObject.toLocaleTimeString(undefined, {
+                hour: "2-digit",
+                minute: "2-digit",
+            });
+            endTime.innerHTML = formattedDate + "<br>" + formattedTime;
+
+            dateObject = new Date(jsonData[jsonData.length - 1]["timestamp"]);
+            formattedDate = dateObject.toLocaleDateString("sl-SI", {
+                day: "numeric",
+                month: "numeric",
+                year: "numeric",
+            });
+            formattedTime = dateObject.toLocaleTimeString(undefined, {
+                hour: "2-digit",
+                minute: "2-digit",
+            });
+            startTime.innerHTML = formattedDate + "<br>" + formattedTime;
 
             // nastavimo stevilo korakov sliderja
             dataSlider.max = data["stations_info"]["numberOfTimestamps"];
@@ -131,12 +159,14 @@ function getContent() {
 
             // premikanje sliderja
             dataSlider.addEventListener("input", function () {
-                updateDataDisplay(this.value);
-                currentIndex = parseInt(this.value);
+                currentIndex = jsonData.length - 1 - parseInt(this.value);
+                updateDataDisplay(currentIndex);
             });
 
             // play gumb
             playBtn.addEventListener("click", function () {
+                playBtn.classList.add("activated");
+                pauseBtn.classList.remove("activated");
                 if (!isPlaying) {
                     playSlider();
                     isPlaying = true;
@@ -145,6 +175,8 @@ function getContent() {
 
             // pause gumb
             pauseBtn.addEventListener("click", function () {
+                pauseBtn.classList.add("activated");
+                playBtn.classList.remove("activated");
                 if (isPlaying) {
                     clearInterval(intervalId);
                     isPlaying = false;
@@ -154,15 +186,16 @@ function getContent() {
             // predvajanje sliderja
             function playSlider() {
                 intervalId = setInterval(function () {
-                    currentIndex = (currentIndex + 1) % jsonData.length;
-                    dataSlider.value = currentIndex;
+                    currentIndex =
+                        (currentIndex - 1 + jsonData.length) % jsonData.length;
+                    dataSlider.value = jsonData.length - 1 - currentIndex;
                     updateDataDisplay(currentIndex);
 
-                    if (currentIndex === 0) {
+                    if (currentIndex === jsonData.length - 1) {
                         clearInterval(intervalId);
                         isPlaying = false;
                     }
-                }, 1000); // nastavljanje intervala
+                }, 100); // nastavljanje intervala
             }
 
             // updatanje prikazanih podatkov pri predvajanju
@@ -384,6 +417,12 @@ let predictionChart = new Chart(station_prediction, {
             title: {
                 display: false,
                 text: "Napoved razpoložljivosti koles",
+            },
+            labels: {
+                render: "label",
+                fontColor: "transparent", // You can set the color to match your background
+                position: "center",
+                arc: false,
             },
         },
         scales: {
